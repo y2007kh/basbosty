@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Nokia Snake</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+
+<!-- شاشة البداية -->
+<div id="startScreen" class="start-screen">
+    <p class="nokia">NOKIA</p>
+    <p class="tagline">Connecting People</p>
+    <button onclick="startGame()">START</button>
+    <div class="swipe-hint">
+        <div class="hand">👆</div>
+        <div class="arrows">↑ ↓ ← →</div>
+        <p>اسحب لتغيير الاتجاه</p>
+    </div>
+</div>
+
+<!-- شاشة اختيار السرعة -->
+<div id="speedScreen" class="speed-screen hidden">
+    <p class="title">Choose Speed</p>
+    <button onclick="setSpeedAndStart('slow')">Slow</button>
+    <button onclick="setSpeedAndStart('normal')">Normal</button>
+    <button onclick="setSpeedAndStart('fast')">Fast</button>
+</div>
+
+
+<!-- اللعبة -->
+<div id="gameContainer" class="hidden">
+    <h2>Snake 🐍</h2>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <p id="score">النقاط: 0</p>
+    <p id="scoreMessage" style="display:none; color:#ff4757; font-weight:bold; margin-left:10px;"></p>
+
+</div>
+
+<!-- شاشة النهاية -->
+<div id="gameOverScreen" class="game-over hidden">
+    <p>GAME OVER</p>
+    <p>Score: <span id="finalScore">0</span></p>
+    <button onclick="restartGame()">Restart</button>
+    <button class="back-btn" onclick="closeGameIframe()">⬅ خروج</button>
+</div>
+
+<script src="snake.js"></script>
+</body>
+</html>

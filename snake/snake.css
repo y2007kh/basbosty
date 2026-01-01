@@ -1,0 +1,235 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 6px;
+  height: 100vh;
+  overflow: hidden;
+  touch-action: none;
+}
+
+canvas {
+    border: 4px solid #2f4f2f;
+    background: #cfe8cf; /* أخضر شاشة نوكيا */
+    image-rendering: pixelated;
+    margin-bottom: 12px;
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 28px;
+}
+#scoreMessage {
+    font-size: 14px;
+    color: #8C47FF; /* أحمر لطيف */
+    font-weight: 600;
+    margin-left: 10px;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+.start-screen {
+    position: fixed;
+    inset: 0;
+    background: #cfe8cf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+.speed-screen {
+    position: fixed;
+    inset: 0;
+    background: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.speed-screen .title {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.speed-screen button {
+    margin: 6px;
+    padding: 8px 20px;
+    font-size: 28px;
+}
+
+.nokia {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.start-screen button {
+    background: #2f4f2f;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: monospace;
+}
+.speed-control {
+    margin-bottom: 10px;
+}
+
+.speed-control button {
+    margin: 0 4px;
+    padding: 4px 10px;
+    font-family: monospace;
+}
+
+/* ================== شاشة الدعم (بدل Game Over) ================== */
+
+.game-over {
+    position: fixed;
+    inset: 0;
+    background: rgba(245, 246, 250, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+}
+
+.game-over p:first-child {
+    font-size: 26px;
+    color: #2f3640;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.game-over p:nth-child(2) {
+    font-size: 16px;
+    color: #718093;
+    margin-bottom: 20px;
+}
+
+.game-over button {
+    padding: 8px 22px;
+    border: none;
+    border-radius: 20px;
+    background: #2f3640;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.game-over button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* حركة هادية */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ================== الفراشات ================== */
+/* ================== فراشات بالصورة ================== */
+
+.butterfly {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("butterfly.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    pointer-events: none;
+    animation: fly 5s ease-in-out forwards;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0) scale(0.6) rotate(0deg);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.7;
+    }
+    50% {
+        transform: translate(
+            calc(-40px + 80px * var(--x)),
+            -60px
+        ) scale(1) rotate(10deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(
+            calc(-60px + 120px * var(--x)),
+            -140px
+        ) scale(1.1) rotate(-10deg);
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}
+button {
+    touch-action: manipulation;
+}
+/* ================== Swipe Hint ================== */
+.swipe-hint {
+    margin: 20px 0 30px;
+    text-align: center;
+    opacity: 0.85;
+    font-size: 18px;
+}
+
+.swipe-hint .hand {
+    font-size: 36px;
+    animation: swipeMove 1.6s infinite ease-in-out;
+}
+
+.swipe-hint .arrows {
+    letter-spacing: 6px;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.swipe-hint p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #2f4f2f;
+}
+
+/* حركة الإيد */
+@keyframes swipeMove {
+    0% {
+        transform: translateX(0);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(18px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0.6;
+    }
+}
