@@ -108,6 +108,14 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+underImages.forEach((img, i) => {
+    const rect = img.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.85) {
+        img.style.transitionDelay = `${i * 0.15}s`;
+        img.classList.add("show");
+    }
+});
+
 
 
 
