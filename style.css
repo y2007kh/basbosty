@@ -42,8 +42,8 @@ body {
 
 /* ================== BOX ================== */
 .box {
-    width: 95vw;
-    max-width: 100%;
+    width: 90vw;
+    max-width: 90%;
     padding: 38px 32px;
 
     background: rgba(255, 255, 255, 0.68);
@@ -214,6 +214,7 @@ body {
 /* ================== EFFECTS ================== */
 .flower {
     position: fixed;
+        top: 120px; /* تغيير الـ top ليكون 40% من أعلى الصفحة */
     animation-name: fall;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
