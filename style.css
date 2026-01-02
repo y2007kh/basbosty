@@ -50,7 +50,7 @@ body {
     backdrop-filter: blur(8px);
     border-radius: 22px;
     box-shadow: 0 14px 36px rgba(150, 120, 200, 0.2);
-    margin: 50px auto 0;
+    margin: 130px auto 0;
     position: relative;   /* مهم لاحتواء أي عنصر داخلي */
     overflow: hidden;     /* يمنع أي خروج */
     text-align: center;
@@ -165,7 +165,7 @@ body {
     }
 }
 .last-line {
-    animation: fadeIn 5s forwards;
+    animation: fadeIn 8s forwards;
 }
 
 @keyframes fadeIn {
@@ -239,7 +239,7 @@ body {
 
 .sidebar ul li a {
     display: block;
-    padding: 16px 24px;
+    padding: 18px 26px;
 
     font-size: 20px;
     color: #ffffff;
@@ -255,12 +255,12 @@ body {
 
 .menu-btn {
     position: fixed;
-    top: 22px;
-    left: 18px;
+    top: 26px;
+    left: 20px;
 
     background: transparent;
     border: none;
-    font-size: 32px;
+    font-size: 36px;
     color: #8e6bbf;
     cursor: pointer;
     z-index: 1100;
@@ -268,8 +268,8 @@ body {
     font-family: "Cairo", sans-serif;
 }
 .credit {
-    margin-top: 24px;
-    font-size: 16px;
+    margin-top: 26px;
+    font-size: 18px;
     color: #8e6bbf;
     text-align: center;
     font-family: "Cairo", sans-serif;
