@@ -109,14 +109,14 @@ canvas {
 }
 
 .game-over p:first-child {
-    font-size: 26px;
+    font-size: 34px;
     color: #2f3640;
     margin-bottom: 10px;
     line-height: 1.6;
 }
 
 .game-over p:nth-child(2) {
-    font-size: 16px;
+    font-size: 26px;
     color: #718093;
     margin-bottom: 20px;
 }
@@ -127,7 +127,7 @@ canvas {
     border-radius: 20px;
     background: #2f3640;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
