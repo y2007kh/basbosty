@@ -40,9 +40,13 @@
 </p>
 
 <div class="audio-area" id="audioArea">
-    <audio controls>
-        <source src="audio/audio.mp3" type="audio/mpeg">
-    </audio>
+<div class="audio-box">
+  <button id="playBtn">▶️</button>
+  <input type="range" id="progress" value="0">
+  <audio id="audio">
+    <source src="audio/audio.mp3" type="audio/mpeg">
+  </audio>
+</div>
 
     <button class="btn"onclick="butterflies(event.clientX, event.clientY);
           setTimeout(()=>location.href='truth.html',350)">كمّلي لما تحبي</button>
@@ -55,6 +59,7 @@
 <script src="audio.js"></script>
 </body>
 </html>
+
 
 
 
