@@ -199,10 +199,10 @@ body {
     align-items: center;
 
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(14px);
     pointer-events: none;
-    
-    transition: opacity 0.6s ease, transform 0.6s ease;
+
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .audio-area.show {
