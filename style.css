@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 190px;
+    height: 200px;
 
     background: #ffffff;
     display: flex;
@@ -32,7 +32,7 @@ body {
 }
 
 .top-bar .title {
-    font-size: 48px;
+    font-size: 58px;
     letter-spacing: 0.5px;
     font-weight: 600;
     color: #8e6bbf;
@@ -52,7 +52,7 @@ body {
     box-shadow: 0 14px 36px rgba(150, 120, 200, 0.2);
 
     /* التوسيط */
-    margin: 210px auto 0; /* 110 top-bar + 40 مسافة */
+    margin: 260px auto 0; /* 110 top-bar + 40 مسافة */
 
     position: relative;
     overflow: hidden;
@@ -123,7 +123,7 @@ body {
 /* ================== BUTTON ================== */
 .btn {
     margin-top: 26px;
-    padding: 24px 48px;  /* زيادة padding قليلاً للزر */
+    padding: 24px 38px;  /* زيادة padding قليلاً للزر */
 
     background: #8e6bbf;
     color: #ffffff;
@@ -154,7 +154,7 @@ body {
     line-height: 2;
     text-align: center;
     margin-bottom: 24px;
-    padding: 20px 16px;
+    padding: 20px 20px;
     position: relative;
 }
 
@@ -201,7 +201,7 @@ body {
     opacity: 0;
     transform: translateY(10px);
     pointer-events: none;
-
+    
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -214,7 +214,7 @@ body {
 /* ================== EFFECTS ================== */
 .flower {
     position: fixed;
-        top: 180px; /* تغيير الـ top ليكون 40% من أعلى الصفحة */
+        top: 200px; /* تغيير الـ top ليكون 40% من أعلى الصفحة */
     animation-name: fall;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -238,9 +238,9 @@ body {
 .sidebar {
     position: fixed;
     top: 180px; /* تحت الـ top bar */
-    left: -290px;
-    width: 290px;
-    height: calc(100% - 180px);
+    left: -390px;
+    width: 390px;
+    height: calc(100% - 200px);
     gap: 18px;
     background: #8e6bbf;
     padding-top: 20px;
@@ -261,7 +261,7 @@ body {
     display: block;
     padding: 18px 26px;
 
-    font-size: 36px;
+    font-size: 38px;
     color: #FFF;
     text-decoration: none;
     font-family: "Cairo", sans-serif;
@@ -275,8 +275,8 @@ body {
 
 .menu-btn {
     position: fixed;
-    top: 38px;
-    left: 24px;
+    top: 44px;
+    left: 34px;
 
     background: transparent;
     border: none;
@@ -288,8 +288,8 @@ body {
     font-family: "Cairo", sans-serif;
 }
 .credit {
-    margin-top: 36px;
-    font-size: 50px;
+    margin-top: 46px;
+    font-size: 60px;
     color: #8e6bbf;
     text-align: center;
     font-family: "Cairo", sans-serif;
