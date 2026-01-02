@@ -395,7 +395,58 @@ body {
     transform: scale(1.2);
 }
 
+/* ================== MOBILE FIX ================== */
+@media (max-width: 600px) {
 
+    body {
+        padding: 14px;
+    }
+
+    .box {
+        width: 94vw;
+        padding: 26px 18px;
+        margin-top: 150px;
+    }
+
+    .soft {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 14px;
+    }
+
+    .btn {
+        padding: 16px 36px;
+        font-size: 18px;
+    }
+
+    .down-arrow {
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
+    .under-box {
+        margin-top: 20px;
+    }
+
+    .under-img {
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+
+    .contact-us {
+        padding: 28px 16px;
+        margin-top: 30px;
+    }
+
+    .contact-us h2 {
+        font-size: 22px;
+    }
+
+    .social-icons img {
+        width: 42px;
+        height: 42px;
+    }
+}
 
 
 
