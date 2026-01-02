@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 120px;
 
     background: #ffffff;
     display: flex;
@@ -42,7 +42,7 @@ body {
 
 /* ================== BOX ================== */
 .box {
-    width: 100vw;
+    width: 95vw;
     max-width: 100%;
     padding: 38px 32px;
 
@@ -52,7 +52,7 @@ body {
     box-shadow: 0 14px 36px rgba(150, 120, 200, 0.2);
 
     /* التوسيط */
-    margin: 130px auto 0; /* 110 top-bar + 40 مسافة */
+    margin: 170px auto 0; /* 110 top-bar + 40 مسافة */
 
     position: relative;
     overflow: hidden;
@@ -80,7 +80,7 @@ body {
 
 /* ================== TEXT ================== */
 .fade-text {
-    font-size: clamp(30px, 12vw, 38px);  /* زيادة للنص الرئيسي */
+    font-size: clamp(30px, 15vw, 44px);  /* زيادة للنص الرئيسي */
     color: #4a3b5a;
     line-height: 1.9;
     opacity: 0;
@@ -94,7 +94,7 @@ body {
 }
 
 .fade-line {
-    font-size: clamp(30px, 10vw, 34px);  /* زيادة للسطر الآخر */
+    font-size: clamp(30px, 15vw, 44px);  /* زيادة للسطر الآخر */
     color: #4a3b5a;
     opacity: 0;
     transform: translateY(8px);
@@ -109,14 +109,14 @@ body {
 /* ================== SOFT TEXT ================== */
 .soft {
     color: #4a3b5a;
-    font-size: clamp(26px, 8vw, 34px);  /* زيادة للنص الخفيف */
+    font-size: clamp(26px, 15vw, 42px);  /* زيادة للنص الخفيف */
     text-align: center;
 
 }
 
 .kio {
     color: #4a3b5a;
-    font-size: clamp(30px, 9vw, 36px); /* زيادة للنص الخفيف */
+    font-size: clamp(30px, 15vw, 44px); /* زيادة للنص الخفيف */
         text-align: center;
 }
 
@@ -131,7 +131,7 @@ body {
     border: none;
     border-radius: 30px;
 
-    font-size: clamp(24px, 8vw, 36px);  /* زيادة للزر */
+    font-size: clamp(24px, 15vw, 46px);  /* زيادة للزر */
     font-family: "Cairo", sans-serif;
 
     cursor: pointer;
@@ -150,7 +150,7 @@ body {
     font-family: "Amiri", "Cairo", serif;
     color: #4a3b5a;
 
-    font-size: clamp(26px, 8vw, 36px);
+    font-size: clamp(26px, 15vw, 44px);
     line-height: 2;
     text-align: center;
     margin-bottom: 24px;
