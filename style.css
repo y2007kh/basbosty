@@ -42,19 +42,33 @@ body {
 
 /* ================== BOX ================== */
 .box {
-    width: 90vw;                /* يملأ أغلب الشاشة */
-    max-width: 540px;           /* زيادة قليلة لتناسب شاشة Realme C75 (6.78 إنش) */
+    width: 90vw;
+    max-width: 540px;
     padding: 36px 30px;
-    transform: translateY(-130px);
+
     background: rgba(255, 255, 255, 0.68);
     backdrop-filter: blur(8px);
     border-radius: 22px;
     box-shadow: 0 14px 36px rgba(150, 120, 200, 0.2);
-    margin: 130px auto 0;
-    position: relative;   /* مهم لاحتواء أي عنصر داخلي */
-    overflow: hidden;     /* يمنع أي خروج */
+
+    /* التوسيط */
+    margin: 150px auto 0; /* 110 top-bar + 40 مسافة */
+
+    position: relative;
+    overflow: hidden;
     text-align: center;
-    animation: fadeUp 0.8s ease;
+
+    /* Fade خفيف فقط */
+    opacity: 0;
+    animation: softFade 0.8s ease forwards;
+}
+@keyframes softFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* ================== TITLES ================== */
