@@ -20,7 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
+    height: 190px;
 
     background: #ffffff;
     display: flex;
@@ -32,7 +32,7 @@ body {
 }
 
 .top-bar .title {
-    font-size: 22px;
+    font-size: 48px;
     letter-spacing: 0.5px;
     font-weight: 600;
     color: #8e6bbf;
@@ -52,7 +52,7 @@ body {
     box-shadow: 0 14px 36px rgba(150, 120, 200, 0.2);
 
     /* التوسيط */
-    margin: 170px auto 0; /* 110 top-bar + 40 مسافة */
+    margin: 210px auto 0; /* 110 top-bar + 40 مسافة */
 
     position: relative;
     overflow: hidden;
@@ -214,7 +214,7 @@ body {
 /* ================== EFFECTS ================== */
 .flower {
     position: fixed;
-        top: 120px; /* تغيير الـ top ليكون 40% من أعلى الصفحة */
+        top: 180px; /* تغيير الـ top ليكون 40% من أعلى الصفحة */
     animation-name: fall;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -230,18 +230,18 @@ body {
         opacity: 1;
     }
     100% {
-        transform: translateY(340px) rotate(360deg) scale(1.3);
+        transform: translateY(500px) rotate(720deg) scale(1.3);
         opacity: 0;
     }
 }
 /* ================== SIDEBAR ================== */
 .sidebar {
     position: fixed;
-    top: 90px; /* تحت الـ top bar */
-    left: -260px;
-    width: 260px;
-    height: calc(100% - 90px);
-
+    top: 180px; /* تحت الـ top bar */
+    left: -290px;
+    width: 290px;
+    height: calc(100% - 180px);
+    gap: 18px
     background: #8e6bbf;
     padding-top: 20px;
     transition: left 0.3s ease;
@@ -261,7 +261,7 @@ body {
     display: block;
     padding: 18px 26px;
 
-    font-size: 30px;
+    font-size: 36px;
     color: #FFF;
     text-decoration: none;
     font-family: "Cairo", sans-serif;
@@ -280,7 +280,7 @@ body {
 
     background: transparent;
     border: none;
-    font-size: 36px;
+    font-size: 50px;
     color: #8e6bbf;
     cursor: pointer;
     z-index: 1100;
