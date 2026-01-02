@@ -102,7 +102,7 @@ function showAudio() {
 }
 
 // الحل الأساسي
-setTimeout(showAudio, 2500);
+setTimeout(showAudio, 8000);
 
 // لو الأنيميشن اشتغلت
 lastLine?.addEventListener("animationend", showAudio);
@@ -125,6 +125,7 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
 
 
 
