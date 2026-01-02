@@ -403,7 +403,7 @@ body {
     }
 
     .box {
-        width: 94vw;
+        width: 96vw;
         padding: 26px 18px;
         margin-top: 150px;
     }
@@ -412,10 +412,16 @@ body {
         font-size: 20px;
         line-height: 1.7;
         margin-bottom: 14px;
+        text-align: justify;   /* يفتح النفس */
+
+    }
+.soft br {
+        display: none;         /* يقلل التقطيع */
     }
 
     .btn {
-        padding: 16px 36px;
+       width: 100%;
+        padding: 16px;
         font-size: 18px;
     }
 
