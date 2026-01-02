@@ -42,9 +42,9 @@ body {
 
 /* ================== BOX ================== */
 .box {
-    width: 90vw;
+    width: 94vw;
     max-width: 540px;
-    padding: 36px 30px;
+    padding: 38px 32px;
 
     background: rgba(255, 255, 255, 0.68);
     backdrop-filter: blur(8px);
@@ -52,7 +52,7 @@ body {
     box-shadow: 0 14px 36px rgba(150, 120, 200, 0.2);
 
     /* التوسيط */
-    margin: 150px auto 0; /* 110 top-bar + 40 مسافة */
+    margin: 180px auto 0; /* 110 top-bar + 40 مسافة */
 
     position: relative;
     overflow: hidden;
@@ -73,14 +73,14 @@ body {
 
 /* ================== TITLES ================== */
 #truthTitle {
-    font-size: clamp(28px, 12vw, 36px);  /* زيادة لجعل العنوان أكبر */
+    font-size: clamp(32px, 12vw, 38px);  /* زيادة لجعل العنوان أكبر */
     opacity: 0.6;
     margin-bottom: 30px;
 }
 
 /* ================== TEXT ================== */
 .fade-text {
-    font-size: clamp(26px, 11vw, 34px);  /* زيادة للنص الرئيسي */
+    font-size: clamp(30px, 12vw, 36px);  /* زيادة للنص الرئيسي */
     line-height: 1.9;
     opacity: 0;
     transform: translateY(8px);
@@ -93,7 +93,7 @@ body {
 }
 
 .fade-line {
-    font-size: clamp(26px, 8vw, 32px);  /* زيادة للسطر الآخر */
+    font-size: clamp(30px, 8vw, 34px);  /* زيادة للسطر الآخر */
     opacity: 0;
     transform: translateY(8px);
     transition: opacity 1.4s ease, transform 1.4s ease;
@@ -107,18 +107,21 @@ body {
 /* ================== SOFT TEXT ================== */
 .soft {
     color: #4a3b5a;
-    font-size: clamp(24px, 5.5vw, 30px);  /* زيادة للنص الخفيف */
+    font-size: clamp(26px, 5.5vw, 32px);  /* زيادة للنص الخفيف */
+    text-align: center;
+
 }
 
 .kio {
     color: #4a3b5a;
-    font-size: clamp(28px, 7vw, 34px);  /* زيادة للنص الخفيف */
+    font-size: clamp(30px, 7vw, 36px); /* زيادة للنص الخفيف */
+        text-align: center;
 }
 
 /* ================== BUTTON ================== */
 .btn {
     margin-top: 26px;
-    padding: 20px 46px;  /* زيادة padding قليلاً للزر */
+    padding: 24px 48px;  /* زيادة padding قليلاً للزر */
 
     background: #8e6bbf;
     color: #ffffff;
@@ -126,7 +129,7 @@ body {
     border: none;
     border-radius: 30px;
 
-    font-size: clamp(20px, 6vw, 23px);  /* زيادة للزر */
+    font-size: clamp(24px, 6vw, 26px);  /* زيادة للزر */
     font-family: "Cairo", sans-serif;
 
     cursor: pointer;
@@ -145,7 +148,7 @@ body {
     font-family: "Amiri", "Cairo", serif;
     color: #4a3b5a;
 
-    font-size: clamp(24px, 6.5vw, 32px);
+    font-size: clamp(26px, 6.5vw, 34px);
     line-height: 2;
     text-align: center;
     margin-bottom: 24px;
@@ -179,7 +182,7 @@ body {
     }
 }
 .last-line {
-    animation: fadeIn 8s forwards;
+    animation: fadeIn 12s forwards;
 }
 
 @keyframes fadeIn {
@@ -255,7 +258,7 @@ body {
     display: block;
     padding: 18px 26px;
 
-    font-size: 28px;
+    font-size: 30px;
     color: #ffffff;
     text-decoration: none;
     font-family: "Cairo", sans-serif;
@@ -324,135 +327,6 @@ body {
     }
 }
 
-
-
-.under-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.under-img {
-    max-width: 90%;
-    height: auto;
-    border-radius: 16px;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
-    margin-bottom: 30px;
-}
-
-.under-img.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* السهم أسفل الصفحة */
-.down-arrow {
-    font-size: 50px;
-    text-align: center;
-    margin-top: 20px;
-    animation: bounce 1.5s infinite;
-    color: #8e6bbf;
-}
-
-/* أنيميشن السهم */
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(15px); }
-}
-
-
-.contact-us {
-    background-color: /*black*/  rgba(142, 107, 191, 0.85);
-    color: white;
-    padding: 40px 20px;
-    margin-top: 50px;
-    border-radius: 22px;
-    text-align: center;
-}
-
-.contact-us h2 {
-    font-size: clamp(24px, 6vw, 30px);
-    margin-bottom: 25px;
-}
-
-.social-icons a {
-    margin: 0 15px;
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-    transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2);
-}
-
-/* ================== MOBILE FIX ================== */
-@media (max-width: 600px) {
-
-    body {
-        padding: 14px;
-    }
-
-    .box {
-        width: 96vw;
-        padding: 26px 18px;
-        margin-top: 150px;
-    }
-
-    .soft {
-        font-size: 20px;
-        line-height: 1.7;
-        margin-bottom: 14px;
-        text-align: justify;   /* يفتح النفس */
-
-    }
-.soft br {
-        display: none;         /* يقلل التقطيع */
-    }
-
-    .btn {
-       width: 100%;
-        padding: 16px;
-        font-size: 18px;
-    }
-
-    .down-arrow {
-        font-size: 36px;
-        margin-top: 10px;
-    }
-
-    .under-box {
-        margin-top: 20px;
-    }
-
-    .under-img {
-        margin-bottom: 20px;
-        border-radius: 12px;
-    }
-
-    .contact-us {
-        padding: 28px 16px;
-        margin-top: 30px;
-    }
-
-    .contact-us h2 {
-        font-size: 22px;
-    }
-
-    .social-icons img {
-        width: 42px;
-        height: 42px;
-    }
-}
 
 
 
