@@ -89,26 +89,9 @@ function butterflies(x, y) {
         });
 
         // إزالة الفراشة بعد الحركة
-        setTimeout(() => b.remove(), 2500);
+        setTimeout(() => b.remove(), 2800);
     }
 }
-
-
-const lastLine = document.querySelector(".poem .last-line");
-const audioArea = document.getElementById("audioArea");
-
-function showAudio() {
-    audioArea?.classList.add("show");
-}
-
-// الحل الأساسي
-setTimeout(showAudio, 8000);
-
-// لو الأنيميشن اشتغلت
-lastLine?.addEventListener("animationend", showAudio);
-lastLine?.addEventListener("transitionend", showAudio);
-
-
 
 
 function toggleSidebar() {
@@ -125,6 +108,7 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
 
 
 
