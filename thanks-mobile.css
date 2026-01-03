@@ -12,7 +12,12 @@ body {
     background: linear-gradient(180deg, #f3e8ff 0%, #fde7f3 100%);
     color: #2b2433;
 }
-
+hr {
+  width: 50%;
+  border: none;
+  border-top: 2px solid #4a3b5a;
+  margin: 30px auto;
+}
 /* ================== TOP BAR ================== */
 .top-bar {
     position: fixed;
