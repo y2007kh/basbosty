@@ -97,7 +97,8 @@ body {
 .soft {
     font-size: 18px;
     margin-bottom: 14px;
-        color: #8e6bbf;
+    color: #8e6bbf;
+    text-align: center;
 }
 
 .soft br {
