@@ -25,3 +25,26 @@ audio.ontimeupdate = () => {
 progress.oninput = () => {
   audio.currentTime = (progress.value / 100) * audio.duration;
 };
+﻿function playAndGo(soundId, btn) {
+    const sound = document.getElementById(soundId);
+
+    // تأثير الفراشات
+    butterflies(
+        btn.getBoundingClientRect().left + btn.offsetWidth / 2,
+        btn.getBoundingClientRect().top + btn.offsetHeight / 2
+    );
+
+    // إعادة الصوت من الأول
+    sound.currentTime = 0;
+    sound.play();
+
+    // اهتزاز موبايل (اختياري)
+    if (navigator.vibrate) {
+        navigator.vibrate(50);
+    }
+
+    // لما الصوت يخلص → انتقال
+    sound.onended = () => {
+        location.href = "page3.html";
+    };
+}
